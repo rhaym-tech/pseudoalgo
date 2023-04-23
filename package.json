@@ -1,0 +1,26 @@
+{
+  "name": "pseudoalgo",
+  "displayName": "pseudoAlgo",
+  "description": "Pseudocode utilisé au des universités algeriennes au module d'ASD (Algoritmique et Structure des donnés)",
+  "version": "1.0.0",
+  "icon": "./icon.png",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "algo",
+      "aliases": ["Algorithmique", "algo"],
+      "extensions": [".algo"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "algo",
+      "scopeName": "source.algo",
+      "path": "./syntaxes/algo.tmLanguage.json"
+    }]
+  }
+}
