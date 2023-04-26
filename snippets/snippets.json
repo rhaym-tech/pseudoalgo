@@ -1,0 +1,231 @@
+{
+	"algorithme":{
+		"prefix": ["algorithme"],
+		"body": ["algorithme ${1:Nom_algorithme}","début","\t$0","fin"],
+		"description":"algorithme"
+	},
+	"fonction (définition)":{
+		"prefix": ["action"],
+		"body": ["action ${1:nom}(${2:paramètres_formels}) : ${3|entier,chaîne,réel  ,booléen,caractère|}","début","\t$0","fin"],
+		"description":"action (définition)"
+	},
+	"procédure (définition)":{
+		"prefix": ["procédure"],
+		"body": ["procédure ${1:nom}(${2:paramètres_formels})","début","\t$0","fin"],
+		"description":"procédure (définition)"
+	},
+	"boucle pour":{
+		"prefix": "pour",
+		"body": ["pour ${1:i} de ${2:point_départ} à ${3:point_d'arrivé} faire","\t$0","fin_pour"],
+		"description":"boucle pour"
+	},
+	"si...alors":{
+		"prefix": "si",
+		"body": ["si ${1:conditon} alors","\t$0","fin_si"],
+		"description":"si...alors"
+	},
+	"si...alors...sinon":{
+		"prefix": "si-sinon",
+		"body": ["si ${1:conditon} alors","\t$0","sinon","\t","fin_si"],
+		"description":"si...alors...sinon"
+	},
+	"boucle tant-que":{
+		"prefix": "tant-que",
+		"body": ["tant que ${1:condition} faire","\t$0","fin_tant_que"],
+		"description":"boucle tant que"
+	},
+	"boucle répéter":{
+		"prefix": ["répéter"],
+		"body": ["répéter","\t$0","jusqu'à  ${1:condition}"],
+		"description":"boucle répéter"
+	},
+	"de":{
+		"prefix":"de",
+		"body":["de $0"],
+		"description":"de <point de départ>"
+	},
+	"à":{
+		"prefix":"à",
+		"body":["à $0"],
+		"description":"de <point d'arivée>"
+	},
+	"début":{
+		"prefix":"début",
+		"body":["début $0"]
+	},
+	"faire":{
+		"prefix":"faire",
+		"body":["faire $0"]
+	},
+	"fin":{
+		"prefix":"fin",
+		"body":["fin $0"]
+	},
+	"fin_pour":{
+		"prefix":"fin_pour",
+		"body":["fin_pour $0"]
+	},
+	"fin_si":{
+		"prefix":"fin_si",
+		"body":["fin_si $0"]
+	},
+	"fin_tant_que":{
+		"prefix":"fin_tant_que",
+		"body":["fin_tant_que $0"]
+	},
+	"jusqu'à":{
+		"prefix":"jusqu'à",
+		"body":["jusqu'à $0"]
+	},
+	"pas":{
+		"prefix":"pas",
+		"body":["pas $0"]
+	},
+	"retourner":{
+		"prefix":"retourner",
+		"body":["retourner $0"],
+		"description":["retourner <valuer>\n, "]
+	},
+	"sinon":{
+		"prefix":"sinon",
+		"body":["sinon $0"]
+	},
+
+	"procédure FDF()":{
+		"prefix":"FDF",
+		"body":["FDF(${1:<id_fichier_ram>}) $0"],
+		"description":"procédure FDF(): Vérifie la FDF ('Fin Du Fichier')\nType de retenue: Booléen"
+	},
+
+	"procédure stop":{
+		"prefix":"FDF",
+		"body":["FDF(${1:<id_fichier_ram>}) $0"],
+		"description":"procédure FDF(): Vérifie la FDF ('Fin Du Fichier')\nType de retenue: Booléen"
+	},
+	"instruction continuer":{
+		"prefix":"continuer",
+		"body":["continuer; $0"],
+		"description":"continuer instruction saute une itération et passe à la suivant\nEt comme ons utilise cette instruction dans les boucles pour continuer dans la boucle même si la condition est faux"
+	},
+
+	"instruction sortir":{
+		"prefix":"sortir",
+		"body":["sortir; $0"],
+		"description":"sortir instruction sorte de la boucle sans passage à la suivant itération dans la boucle"
+	},
+
+	"procédure ouvrir()":{
+		"prefix":"OuvrirFichier",
+		"body":["OuvrirFichier(${1:<chemin_fichier>}, ${2:nom_var}, \"${3:<mode_ouverture (options: r, r+, w, w+, a, a+)>}\") $0"],
+		"description":"procédure OuvrirFichier()"
+	},
+
+	"procédure FermerFichier()":{
+		"prefix":["FermerFichier", "fermer"],
+		"body":["FermerFichier(${1:<id_fichier_ram>}) $0"],
+		"description":"procédure FermerFichier()"
+	},
+	"fonction lire()":{
+		"prefix":"lire",
+		"body":["Lire(${1:id_variable}); $0"],
+		"description":"Instructions d'entrées: fonction principale d'entrées\nPour lire une variable l'action de lecture doit se présenter comme suit :\nLire (id_variable);\nIl est possible de lire plusieurs variables dans une même action de lecture.\nLa syntaxe se présente, alors, comme suit :\nLire (id_variable1, id_variable2, ..., id_variableN);"
+	},
+	"procédure écrire()":{
+		"prefix":["écrire", "ecrire"],
+		"body":["Écrire(${1:expression}); $0"],
+		"description":"Instructions d'entrées: fonction principale d'entrées\nL'écriture est une opération de sortie. Elle permet à l'utilisateur d'afficher les résultats d'un traitement sur l'écran. Une action d'écriture peut se faire :\n• sur une ou plusieurs variables,\n• sur des constantes,\n• sur des expressions arithmétiques et logiques, \n• sur des messages."
+	},
+	"type booléen":{
+		"prefix":"booléen",
+		"body":["booléen$0"]
+	},
+	"type caractère":{
+		"prefix":["caractère", "char"],
+		"body":["caractère$0"]
+	},
+	"type chaîne":{
+		"prefix":["chaîne", "string"],
+		"body":["chaîne$0"]
+	},
+	"type enregistrement":{
+		"prefix":"enregistrement",
+		"body":["enregistrement$0"]
+	},
+	"type entier":{
+		"prefix":"entier",
+		"body":["entier$0"]
+	},
+	"type réel":{
+		"prefix":["réel", "reel"],
+		"body":["réel$0"]
+	},
+	"type tableau":{
+		"prefix":"tableau",
+		"body":["tableau de ${1:20} ${2:entier}$0"]
+	},
+	"type fonction":{
+		"prefix":"action",
+		"body":["action $0"]
+	},
+	"type procédure":{
+		"prefix":"procédure",
+		"body":["procédure $0"]
+	},
+	"opérateur ≥":{
+		"prefix": [">="],
+		"body": ["≥ $0"],
+		"description":"opérateur ≥"
+	},
+	"opérateur ≤":{
+		"prefix": ["<="],
+		"body": ["≤ $0"],
+		"description":"opérateur ≤"
+	},
+	"opérateur ≠":{
+		"prefix": ["!="],
+		"body": ["≠ $0"],
+		"description":"opérateur ≠"
+	},
+	"affectation (<--)":{
+		"prefix": ["<--"],
+		"body": ["<-- $0"],
+		"description":"affectation (<--)"
+	},
+	"opérateur et":{
+		"prefix":"et",
+		"body":["et $0"]
+	},
+	"opérateur ouex":{
+		"prefix":"ouex",
+		"body":["ouex $0"]
+	},
+	"opérateur ou":{
+		"prefix":["ou", "||"],
+		"body":["ou $0"]
+	},
+	"opérateur non":{
+		"prefix":["non", "!"],
+		"body":["non $0"]
+	},
+	"opérateur div":{
+		"prefix":["div", "/"],
+		"body":["div $0"]
+	},
+	"opérateur mod":{
+		"prefix":["mod", "%"],
+		"body":["mod $0"]
+	},
+	"faux":{
+		"prefix":"faux",
+		"body":["faux $0"]
+	},
+	"vrai":{
+		"prefix":"vrai",
+		"body":["vrai $0"]
+	},
+	"mot-clé NULL": {
+		"prefix": "NULL",
+		"body": ["NULL $0"],
+		"description": "Le pointeur null"
+	}
+}

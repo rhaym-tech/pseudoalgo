@@ -1,65 +1,74 @@
-# pseudoalgo README
+#  PseudoAlgo
 
-This is the README for your extension "pseudoalgo". After writing up a brief description, we recommend including the following sections.
+Développez vos algorithmes avec facilité grâce à l'extension d'Algorithmique et Pseudo-code pour VSCode. Écrivez, comprenez et vérifiez vos algorithmes en pseudo-code, avec une syntaxe claire et une vérification syntaxique en temps réel. Personnalisez votre expérience avec des thèmes de couleur et des raccourcis clavier. Un outil incontournable pour les étudiants en informatique et les développeurs professionnels.
 
-## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Caractéristiques :
 
-For example if there is an image subfolder under your extension project workspace:
+L'extension d'Algorithmique et Pseudo-code pour VSCode offre plusieurs fonctionnalités avancées pour faciliter le développement d'algorithmes de manière efficace et structurée :
 
-\!\[feature X\]\(images/feature-x.png\)
+### Support de code bien structuré :
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+L'extension permet de créer et de formater du pseudo-code de manière organisée et claire, avec une syntaxe bien structurée pour les instructions conditionnelles, les boucles et les appels de fonction. Elle vous aide à maintenir un code propre et facile à comprendre.
 
-## Requirements
+### Reconnaissance des mots-clés et fonctions d'algorithmes :
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+L'extension reconnaît et met en évidence automatiquement les mots-clés et les fonctions d'algorithmes couramment utilisés, ce qui facilite la lecture et la compréhension du code pseudo-code. Elle vous permet de vous concentrer sur la logique algorithmique plutôt que sur la syntaxe.
 
-## Extension Settings
+### Prise en charge de snippets de code prédéfinis :
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+L'extension propose des snippets de code prédéfinis pour les structures d'algorithmes courantes, tels que les boucles, les conditions et les fonctions, ce qui vous permet de gagner du temps et d'accélérer le processus de développement d'algorithmes.
 
-For example:
+### Fonctionnalités avancées (y compris les pointeurs) :
 
-This extension contributes the following settings:
+L'extension prend en charge des fonctionnalités avancées telles que les pointeurs, vous permettant de modéliser des algorithmes plus complexes et d'explorer des concepts d'algorithmique avancés avec facilité.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+L'extension d'Algorithmique et Pseudo-code pour VSCode est un outil complet pour les développeurs et les étudiants en informatique, offrant un support complet pour écrire, comprendre et vérifier des algorithmes en pseudo-code de manière efficace et structurée.
+  
 
-## Known Issues
+##  Requirements
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+VSCode v1.77 or newer
+Algorithmique pseudo code language knowledge
 
-## Release Notes
+  
 
-Users appreciate release notes as you update your extension.
+##  Release notes
 
-### 1.0.0
 
-Initial release of ...
+###  2.0.0
 
-### 1.0.1
+What's new:
 
-Fixed issue #.
+- Better syntax compability
 
-### 1.1.0
+- Support files (les fichier)
 
-Added features X, Y, and Z.
+- New presets code snippets
 
----
+- New keywords supported
 
-## Working with Markdown
+- Fix bugs
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+  
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+###  1.0.0
 
-## For more information
+  
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Initial release of pseudo code, with 80% of algorithms syntax support
+
+  
+  
+
+##  For more information
+
+  
+
+*  [Developer webpage](https://www.rhaym-tech.me)
+
+*  [Contact developer](https://twitter.com/UchihaRhaym)
+
+  
 
 **Enjoy!**

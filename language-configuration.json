@@ -15,7 +15,8 @@
         ["si", "fin_si"],
         ["selon", "fin_selon"],
         ["répéter", "jusqu'à"],
-        ["début", "fin"]
+        ["repeter", "jusqu'a"],
+        ["debut", "fin"]
     ],
     //* symbols that are auto closed when typing
     "autoClosingPairs": [
@@ -24,7 +25,8 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"],
-        {"open": "début", "close": "fin", "notIn": ["string", "comment"]}
+        {"open": "début", "close": "fin", "notIn": ["string", "comment"]},
+        {"open": "debut", "close": "fin", "notIn": ["string", "comment"]}
     ],
     //* symbols that that can be used to surround a selection
     "surroundingPairs": [
@@ -33,13 +35,14 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"],
-        ["début", "fin"]
+        ["début", "fin"],
+        ["debut", "fin"]
     ],
 
     "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)|((\\<\\-?\\-?)|(\\<\\=?)|(\\>\\=?)|(!\\=?))",
 
     "indentationRules": {
-        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*|début|répéter|faire|alors|sinon)$",
-        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*([\\}\\]]|fin|fin_pour|fin_selon|fin_si|fin_tant_que|jusqu'à|sinon).*$"
+        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*|début|debut|répéter|repeter|faire|alors|sinon)$",
+        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*([\\}\\]]|fin|fin_pour|fin_selon|fin_si|fin_tant_que|jusqu'à|jusqu'a|sinon).*$"
     }
 }

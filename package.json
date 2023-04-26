@@ -1,8 +1,9 @@
 {
   "name": "pseudoalgo",
   "displayName": "pseudoAlgo",
+  "publisher": "RhaymTech",
   "description": "Pseudocode utilisé au des universités algeriennes au module d'ASD (Algoritmique et Structure des donnés)",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "icon": "./icon.png",
   "engines": {
     "vscode": "^1.77.0"
@@ -21,6 +22,14 @@
       "language": "algo",
       "scopeName": "source.algo",
       "path": "./syntaxes/algo.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "algo",
+      "path": "./snippets/snippets.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhaym-tech/pseudoalgo.git"
   }
 }
